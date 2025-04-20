@@ -1,0 +1,20 @@
+Fibonacci series
+
+#include<stdio.h>
+int Fib(n){
+   if(n==0)
+      return 0;
+   else if(n==1)
+      return 1;
+   else
+      return (Fib(n-1)+Fib(n-2));
+}
+int main(){
+   int i,j,n,sum;
+   printf("Enter the size of fibonacci series \n");
+   scanf("%d",&n);
+   i=0;j=1;sum=0;
+    for(i=0;i<n;i++){   
+      printf("%d\t",Fib(i));
+   }
+}
