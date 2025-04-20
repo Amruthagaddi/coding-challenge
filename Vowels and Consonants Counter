@@ -1,0 +1,39 @@
+Vowels and Consonants
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+   char s[20];
+   int i,n,vowel=0,consonant=0;
+   printf("Enter the string\n");
+   scanf("%s",s);
+   for(i=0;i<strlen(s);i++){
+      switch(s[i]){
+         case 'a':
+         case 'A':
+                  vowel++;
+                  break;
+         case 'e':
+         case 'E':
+                  vowel++;
+                  break;
+         case 'i':
+         case 'I':
+                  vowel++;
+                  break;
+         case 'o':
+         case 'O':
+                  vowel++;
+                  break;
+         case 'u':
+         case 'U':
+                  vowel++;
+                  break;
+         default:consonant++;
+                  break;
+      }
+   }
+   printf("\nNumber of vowels=%d",vowel);
+   printf("\nNumber of consonant=%d",consonant);
+   return 0;
+}
